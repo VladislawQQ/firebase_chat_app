@@ -2,6 +2,7 @@ buildscript {
 
     val agpVersion by extra("8.2.0-beta04")
     val navigationVersion by extra("2.7.5")
+    val glideVersion by extra("4.16.0")
 
     dependencies {
         classpath("com.google.gms:google-services:4.4.0")

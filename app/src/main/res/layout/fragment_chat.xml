@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.ChatFragment">
+    tools:context=".ui.main.chat.ChatFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image_view_log_out"
@@ -21,7 +21,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        tools:listitem="@layout/rv_item"
+        tools:listitem="@layout/item_message"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

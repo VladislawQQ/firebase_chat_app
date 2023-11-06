@@ -49,6 +49,7 @@ android {
 dependencies {
 
     val navigationVersion = rootProject.extra.get("navigationVersion")
+    val glideVersion = rootProject.extra.get("glideVersion")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -56,6 +57,9 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("androidx.fragment:fragment-ktx:1.6.2")
     implementation ("androidx.activity:activity-ktx:1.8.0")
+
+    // Glide for images
+    implementation("com.github.bumptech.glide:glide:$glideVersion")
 
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:32.4.1"))

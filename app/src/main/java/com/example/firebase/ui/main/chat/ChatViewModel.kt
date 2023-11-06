@@ -1,8 +1,7 @@
-package com.example.firebase.ui.main
+package com.example.firebase.ui.main.chat
 
 import androidx.lifecycle.ViewModel
 import com.example.firebase.model.MessageItem
-import com.example.firebase.model.User
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 

@@ -1,7 +1,8 @@
-package com.example.firebase.ui.adapter.diffUtil
+package com.example.firebase.ui.adapters.messages.diffUtil
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.firebase.model.MessageItem
+import com.example.firebase.model.User
 
 class MessageDiffUtil : DiffUtil.ItemCallback<MessageItem>() {
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/logout_nav_graph"
@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.example.firebase.ui.main.ChatFragment"
+        android:name="com.example.firebase.ui.main.chat.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" >
         <action
@@ -20,4 +20,16 @@
         android:name="com.example.firebase.ui.authentication.AuthActivity"
         android:label="activity_auth"
         tools:layout="@layout/activity_auth" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.firebase.ui.main.users.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_usersFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_authActivity"
+            app:destination="@id/authActivity" />
+    </fragment>
 </navigation>

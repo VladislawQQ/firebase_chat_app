@@ -1,4 +1,4 @@
-package com.example.firebase.ui.main
+package com.example.firebase.ui.main.chat
 
 import android.os.Bundle
 import android.util.Log
@@ -16,10 +16,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.firebase.databinding.FragmentChatBinding
 import com.example.firebase.model.MessageItem
 import com.example.firebase.model.User
-import com.example.firebase.ui.Constants
-import com.example.firebase.ui.Constants.imagesStorage
-import com.example.firebase.ui.adapter.MessageAdapter
+import com.example.firebase.ui.adapters.messages.MessageAdapter
 import com.example.firebase.ui.base.BaseFragment
+import com.example.firebase.ui.utils.Constants
+import com.example.firebase.ui.utils.Constants.imagesStorage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ChildEventListener
@@ -121,7 +121,7 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(FragmentChatBinding::infl
                 val imagesReference = imagesStorageRef.child(uri.lastPathSegment.toString())
                 val uploadTask = imagesReference.putFile(uri)
 
-                val urlTask = uploadTask.continueWithTask { task ->
+                uploadTask.continueWithTask { task ->
                     if (!task.isSuccessful) {
                         task.exception?.let {
                             throw it

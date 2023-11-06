@@ -1,13 +1,12 @@
 package com.example.firebase.ui.authentication
 
 import android.os.Bundle
-import android.text.Layout.Directions
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.example.firebase.databinding.FragmentSignUpBinding
 import com.example.firebase.model.User
-import com.example.firebase.ui.Constants.usersDB
+import com.example.firebase.ui.utils.Constants.usersDB
 import com.example.firebase.ui.base.BaseFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
