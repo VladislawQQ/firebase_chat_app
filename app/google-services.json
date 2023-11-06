@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1082698758516",
+    "firebase_url": "https://fir-eab54-default-rtdb.firebaseio.com",
+    "project_id": "fir-eab54",
+    "storage_bucket": "fir-eab54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082698758516:android:3cd1debe503d6d532d5421",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEw6QgusJzNMiPl4FgXLaG9ndr8EjrIsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
